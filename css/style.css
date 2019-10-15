@@ -7,12 +7,52 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 body {
   background: #fff;
-  color: #666666;
+  color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
 }
 
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
 a {
   color: #2dc997;
 }
@@ -138,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background: url(../img/leaf-bg.jpg) top center;
   background-size: cover;
   position: relative;
 }
@@ -502,7 +542,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
+  
   margin-bottom: 10px;
 }
 
@@ -576,8 +616,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7f7f7;
+  background: #353535;
   padding: 80px 0 60px 0;
+}
+
+#facts .section-header .section-title {
+  color: #f2f2f2;
+}
+
+#facts .section-description {
+  color: #D3D3D3;
 }
 
 #facts .counters span {
@@ -806,8 +854,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
+  background: #f2f2f2;
+  color: #353535;
   padding: 80px 0 60px 0;
+}
+
+#team .member-div {
+  display: flex;
+  justify-content: center;
 }
 
 #team .member {
