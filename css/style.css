@@ -714,6 +714,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
 }
 
+#services .instagram-feed {
+  margin-left: 80px;
+  margin-right: 60px;
+}
+
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
