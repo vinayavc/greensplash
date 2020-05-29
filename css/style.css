@@ -9,6 +9,7 @@
 --------------------------------------------------------------*/
 
 
+
 body {
   background: #fff;
   color: #f2f2f2;
@@ -178,7 +179,8 @@ h1, h2, h3, h4, h5, h6 {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/leaf-bg.jpg) top center;
+  background: #1d211e;
+  /* background: url(../img/leaf-bg.jpg) top center; */
   background-size: cover;
   position: relative;
 }
@@ -191,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: #1d211e;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -219,6 +221,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+}
+
+#intro .greentext {
+  color: #2dc997;
 }
 
 #intro h1.plain {
@@ -653,7 +659,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #353535;
+  background: #1d211e;
   padding: 80px 0 60px 0;
 }
 
@@ -897,7 +903,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #team {
   background: #f2f2f2;
-  color: #353535;
+  color: #1d211e;
   padding: 80px 0 60px 0;
 }
 
@@ -957,7 +963,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0 40px 0;
 }
 #contact p {
-  color: #353535;
+  color: #1d211e;
   text-align: center;
 }
 

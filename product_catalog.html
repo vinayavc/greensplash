@@ -17,6 +17,8 @@
 
 	<!-- Bootstrap CSS File -->
 	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
 
 	<!-- Libraries CSS Files -->
 	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -24,6 +26,11 @@
 
 	<!-- Main Stylesheet File -->
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+	<script src="js/modernizr.custom.js"></script>
 
  
 </head>
@@ -31,305 +38,174 @@
 <body>
 
   <!--==========================
-  Header
-  ============================-->
-  <header id="header">
-  	<div class="container">
-
-  		<div id="logo" class="pull-left">
-  			<!-- <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a> -->
-  			<!-- Uncomment below if you prefer to use a text logo -->
-  			<h1><a href="#intro">Welcome</a></h1>
-  		</div>
-
-  		<nav id="nav-menu-container">
-  			<ul class="nav-menu">
-  				<li class="menu-active"><a href="#intro">Home</a></li>
-  				<li><a href="#posts">Posts</a></li>
-  				<li><a href="#team">Team</a></li>
-          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-        </li> -->
-        <li><a href="#contact">Contact Us</a></li>
-    </ul>
-</nav><!-- #nav-menu-container -->
-</div>
-</header><!-- #header -->
-
-  <!--==========================
     Intro Section
     ============================-->
     <section id="intro">
     	<div class="intro-container">
-    		<h1 class="plain">Have you completed your green check list?</h1>
-        <h1 class="neon">💚</h1>
-    		<!-- <h2>We're here to help you keep up with the green times!</h2> -->
-        <h1 class="live">Live <span class="type"></span></br> </br> </h1>
-    		<!-- <p><strong>Why</strong> are sustainable products so hard to find? </br> <strong>How</strong> do we alleviate the fear around women's deepest, most private health concerns?</p>
-    		<p>Zero waste living isn't about a handful of people doing things perfectly. We need many, many people doing it imperfectly. </br>We at GreenSplash aim to spread awareness about sustainable living and female health with expert medical opinions backed by latest research papers.</p> -->
-    		<a href="#posts" class="btn-get-started" >Get Started</a>
-    	</div>
+			<h1 class="plain">Have you completed your <span class="greentext">green</span> check list?</h1>
+			<h2>Scroll to find out!</h2>
+		</div>
+	</section>
+	
 
-      <script src="js/typed.js"></script>
-      <script>
-        var typed = new Typed('.type', {
-          strings: [
-          'Healthy.', 
-          'Sustainably.',
-          'Minimally.'
-          ],
-          typeSpeed: 60,
-          backSpeed: 60,
-          loop: true
-        });
-      </script>
-    </section><!-- #intro -->
-
+	<!-- <section>
+		<form class="ac-custom ac-checkbox ac-checkmark" autocomplete="off">
+			
+			<h2>Why do you interactively procrastinate high-payoff content without backward-compatible data?</h2>
+			<ul>
+				<li><input id="cb6" name="cb6" type="checkbox"><label for="cb6">Credibly reintermediate backend ideas</label></li>
+				<li><input id="cb7" name="cb7" type="checkbox"><label for="cb7">Continually reintermediate integrated processes</label></li>
+				<li><input id="cb8" name="cb8" type="checkbox"><label for="cb8">Distinctively exploit optimal alignments</label></li>
+				<li><input id="cb9" name="cb9" type="checkbox"><label for="cb9">Quickly coordinate e-business applications</label></li>
+			<ul>
+		</form>
+	</section>
+	
+	<section>
+		<form class="ac-custom ac-checkbox ac-boxfill" autocomplete="off">
+			<h2>How can you appropriately empower dynamic leadership skills after business portals?</h2>
+			<ul>
+				<li><input id="cb10" name="cb10" type="checkbox"><label for="cb10">Professionally fashion wireless leadership</label></li>
+				<li><input id="cb11" name="cb11" type="checkbox"><label for="cb11">Dynamically reinvent market-driven opportunities</label></li>
+				<li><input id="cb12" name="cb12" type="checkbox"><label for="cb12">Compellingly embrace empowered e-business</label></li>
+				<li><input id="cb13" name="cb13" type="checkbox"><label for="cb13">Synergistically deliver performance based methods</label></li>
+			</ul>
+		</form>
+	</section> -->
+	
     <main id="main">
 
     <!--==========================
-      Post Section
+      Checklist Section
       ============================-->
       <section id="posts">
-      	<div class="container wow fadeInUp">
-      		<div class="section-header">
-      			<h3 class="section-title">Posts</h3>
-      			<p class="section-description">Click on any section to read more about the impact of our everyday consumption</p>
-      		</div>
-      		<div class="row">
+		<div class="container wow fadeInUp">
+			<div class="section-header">
+				<h3 class="section-title">Eco-friendly Home Checklists</h3>
+				<p class="section-description">Creating an eco-friendly home takes time and patience. </br>We're here to guide you step-by-step for a <span class="greentext">green</span> home reno!</p>
+			</div>
+			<div class="row">
 
-      			<div class="col-lg-12">
-      				<ul id="portfolio-flters">
-      					<li data-filter=".filter-home, .filter-personal, .filter-fhealth" class="filter-active">All</li>
-      					<li data-filter=".filter-home">Home</li>
-      					<li data-filter=".filter-personal">Personal</li>
-      					<li data-filter=".filter-fhealth">Feminine Health</li>
-      				</ul>
-      			</div>
-      		</div>
+				<div class="col-lg-12">
+					<ul id="portfolio-flters">
+						<li data-filter=".filter-home, .filter-personal, .filter-fhealth" class="filter-active">All</li>
+						<li data-filter=".filter-home">Home</li>
+						<li data-filter=".filter-personal">Personal</li>
+						<li data-filter=".filter-fhealth">Feminine Health</li>
+					</ul>
+				</div>
+			</div>
 
-      		<div class="row" id="portfolio-wrapper">
-      			<div class="col-lg-3 col-md-6 portfolio-item filter-home">
-      				<a href="https://earth911.com/living-well-being/health/cleaning-vinegar-baking-soda-lemon/" target="_blank">
-      					<img src="img/portfolio/clean-home.jpg" alt="">
-      					<div class="details">
-      						<h4>Cleaning your home!</h4>
-      						<span>When life gives you lemons... CLEAN!</span>
-      					</div>
-      				</a>
-      			</div>
-
-
-      			<div class="col-lg-3 col-md-6 portfolio-item filter-personal">
-      				<a href="https://sustainablelivingtips.home.blog/2019/11/07/enamel-cruelty-2/" target="_blank">
-      					<img src="img/portfolio/molar-bear.png" alt="Eco Friendly Oral Care">
-      					<div class="details">
-      						<h4>Brush Smart!</h4>
-      						<span>Fight against Enamel cruelty</span>
-      					</div>
-      				</a>
-      			</div>
+			<div class="row" id="portfolio-wrapper">
+				<div class="col-lg-4 col-md-6 portfolio-item filter-home">
+					<div class="container">						
+						<img src="img/leaf2-bg.jpg">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#homeList">
+							Kitchen
+						</button>
+						<div class="details">
+							<h4>Taco 'bout cleaning!</h4>
+							<span>Switch out your cleaning tools</span>
+						</div>
+												
+					</div>
+				</div>
 
 
-      			<div class="col-lg-3 col-md-6 portfolio-item filter-fhealth">
-      				<a href="https://www.healthline.com/health/womens-health/menstrual-cup" target="_blank">
-      					<img src="img/portfolio/menstrual-cup.jpg" alt="">
-      					<div class="details">
-      						<h4>Menstrual Cups</h4>
-      						<span>Why you should make the switch</span>
-      					</div>
-      				</a>
-      			</div>
-
-      			<div class="col-lg-3 col-md-6 portfolio-item filter-fhealth">
-      				<a href="https://www.greenmatters.com/style/2018/07/17/14GTJB/sustainable-period-products" target="_blank">
-      					<img src="img/portfolio/reusable-pads.jpg" alt="">
-      					<div class="details">
-      						<h4>Sustainable periods</h4>
-      						<span>Good for you, good for the planet!</span>
-      					</div>
-      				</a>
-      			</div> 			
-
-      		</div>
-
-      	</div>
-      </section><!-- #posts -->
+				<div class="col-lg-4 col-md-6 portfolio-item filter-personal">
+					<a href="https://sustainablelivingtips.home.blog/2019/11/07/enamel-cruelty-2/" target="_blank">
+						<img src="img/portfolio/molar-bear.png" alt="Eco Friendly Oral Care">
+						<div class="details">
+							<h4>Brush Smart!</h4>
+							<span>Fight against Enamel cruelty</span>
+						</div>
+					</a>
+				</div>
 
 
-    <!--==========================
-      Facts Section
-      ============================-->
-      <section id="facts">
-      	<div class="container wow fadeIn">
-      		<div class="section-header">
-      			<h3 class="section-title">Plastic Pollution - Facts and Figures</h3>
-      			<p class="section-description">We seriously need to do something about our plastic pollution.</p>
-      		</div>
-      		<div class="row counters">
+				<div class="col-lg-4 col-md-6 portfolio-item filter-fhealth">
+					<a href="https://www.healthline.com/health/womens-health/menstrual-cup" target="_blank">
+						<img src="img/portfolio/menstrual-cup.jpg" alt="">
+						<div class="details">
+							<h4>Menstrual Cups</h4>
+							<span>Why you should make the switch</span>
+						</div>
+					</a>
+				</div>
 
-      			<div class="col-lg-3 col-6 text-center">
-      				<span data-toggle="counter-up">300</span>
-      				<p>million tonnes of plastic are produced every year</p>
-      			</div>
+				<div class="col-lg-4 col-md-6 portfolio-item filter-fhealth">
+					<a href="https://www.greenmatters.com/style/2018/07/17/14GTJB/sustainable-period-products" target="_blank">
+						<img src="img/portfolio/reusable-pads.jpg" alt="">
+						<div class="details">
+							<h4>Sustainable periods</h4>
+							<span>Good for you, good for the planet!</span>
+						</div>
+					</a>
+				</div> 			
 
-      			<div class="col-lg-3 col-6 text-center">
-      				<span data-toggle="counter-up">150</span>
-      				<p>million tonnes of plastic produced every year are for SINGLE USE purposes</p>
-      			</div>
+			</div>
 
-      			<div class="col-lg-3 col-6 text-center">
-      				<span data-toggle="counter-up">13</span>
-      				<p>million tonnes of plastic enters the oceans every year.</p>
-      			</div>
-
-      			<div class="col-lg-3 col-6 text-center">
-      				<span data-toggle="counter-up">70,000</span>
-      				<p>Microplastics are ingested by the average human each year</p>
-      			</div>
-
-      		</div>
-
-      	</div>
-      </section><!-- #facts -->
-
-    <!--==========================
-      Instagram Section
-      ============================-->
-      <section id="instagram">
-      	<div class="container wow fadeIn">
-      		<div class="section-header">
-      			<h3 class="section-title">Instagram</h3>
-      			<p class="section-description">Follow us <a href = "https://www.instagram.com/sustainable_living_tips/" target="_blank"> @sustainable_living_tips </a> on how you can reduce, reuse and recycle!</p>
-      			<div class="instagram-feed">
-      				<!-- SnapWidget -->
-      				<script src="https://snapwidget.com/js/snapwidget.js"></script>
-      				<iframe src="https://snapwidget.com/embed/748115" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
-      			</div>
-      		</div>
-        <!--<div class="row">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-photo"></i></a></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-road"></i></a></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-shopping-bag"></i></a></div>
-              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-            </div>
-          </div>
-      </div> -->
-
-  </div>
-</section><!-- #instagram -->
-
-    <!--==========================
-    Call To Action Section
-    ============================-->
-    <section id="call-to-action">
-    	<div class="container wow fadeIn">
-    		<div class="row">
-    			<div class="col-lg-9 text-center text-lg-left">
-    				<h3 class="cta-title">Be Bold. Make the switch today!</h3>
-    				<p class="cta-text">Browse our favourites!</p>
-    			</div>
-    			<div class="col-lg-3 cta-btn-container text-center">
-    				<a class="cta-btn align-middle" href="http://trashisfortossers.com/a-beginners-guide-to-zero-waste-living-ps-it-doesnt-happen-overnight/" target="_blank">Check it out!</a>
-    			</div>
-    		</div>
-
-    	</div>
-    </section><!-- #call-to-action -->
+		</div>
+	</section><!-- #posts -->
 
 
+	<!--==========================
+      Modal Section
+	  ============================-->
+	  <!-- The Modal -->
+	  	<div class="modal fade" id="homeList">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+			
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h2>Kitchen Checklist</h2>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+			
+					<!-- Modal body -->
+					<div class="modal-body">
+						<form class="ac-custom ac-checkbox ac-boxfill" autocomplete="off">
+							<!-- <h4>How can you appropriately empower dynamic leadership skills after business portals?</h4> -->
+							<ul>
+								<li><input id="cb10" name="cb10" type="checkbox"><label for="cb10">Plant-based dish scrubber</label></li>
+								<li><input id="cb11" name="cb11" type="checkbox"><label for="cb11">Plant-based sponge</label></li>
+								<li><input id="cb12" name="cb12" type="checkbox"><label for="cb12">Plant-based dish-washing liquid</label></li>
+								<li><input id="cb13" name="cb13" type="checkbox"><label for="cb13">Bar soap</label></li>
+							</ul>
+						</form>
+					</div>
+					<div id="editor"></div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<a href="/img/kitchen-checklist.pdf" download>
+							<button id="dwnld" type="button" class="btn btn-danger" data-dismiss="modal">Download PDF</button>
+						</a>
+					</div>
+					<!-- <script type="text/javascript">
+						$(function () {
 
-    <!--==========================
-      Team Section
-      ============================-->
-      <section id="team">
-      	<div class="container wow fadeInUp">
-      		<div class="section-header">
-      			<h3 class="section-title">Meet the Team!</h3>
-      			<p class="section-description">A doctor and an engineer with a passion for living sustainably!</br><strong>Why</strong> are sustainable products so hard to find? </br> <strong>How</strong> do we alleviate the fear around women's deepest, most private health concerns?</br>Zero waste living isn't about a handful of people doing things perfectly. We need many, many people doing it imperfectly. </br>We aim to spread awareness about sustainable living and female health with expert medical opinions backed by latest research papers.</p></p>
-      		</div>
-      		<div class="row member-div">
-      			<div class="col-lg-3 col-md-6">
-      				<div class="member">
-      					<div class="pic"><img src="img/nikhila-profile.PNG" alt=""></div>
-      					<h4>Dr. Nikhila Sathe</h4>
-      					<span>MBBS, DNB (Ophthal), FICO</span>
-      					<div class="social">
-      						<a href="https://www.instagram.com/soulcurrie/" target="_blank"><i class="fa fa-instagram"></i></a>
-      						<!-- <a href=""><i class="fa fa-facebook"></i></a>
-      						<a href=""><i class="fa fa-google-plus"></i></a>
-      						<a href=""><i class="fa fa-linkedin"></i></a> -->
-      					</div>
-      				</div>
-      			</div>
+							var specialElementHandlers = {
+								'#editor': function (element,renderer) {
+									return true;
+								}
+							};
+							$('#dwnld').click(function () {
+								var doc = new jsPDF();
+								doc.fromHTML(
+									$('#homeList').html(), 15, 15, 
+									{ 'width': 170, 'elementHandlers': specialElementHandlers }, 
+									function(){ doc.save('home-list.pdf'); }
+								);
 
-      			<div class="col-lg-3 col-md-6">
-      				<div class="member">
-      					<div class="pic"><img src="img/vinaya-profile.PNG" alt=""></div>
-      					<h4>Vinaya Chandiramani</h4>
-      					<span>M.S. Computer Science</span>
-      					<div class="social">
-      						<a href="https://www.instagram.com/mousecutlet/"  target="_blank"><i class="fa fa-instagram"></i></a>
-      						<a href="https://www.linkedin.com/in/vinaya-chandiramani/"  target="_blank"><i class="fa fa-linkedin"></i></a>
-      					</div>
-      				</div>
-      			</div>
+							});  
+						});
+					</script> -->
+				</div>
+			</div>
+		</div>
 
-
-      		</div>
-      	</section><!-- #team -->
-
+	<!-- #modal -->
     <!--==========================
       Contact Section
       ============================-->
@@ -436,13 +312,20 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/superfish/hoverIntent.js"></script>
-    <script src="lib/superfish/superfish.min.js"></script>
+	<script src="lib/superfish/superfish.min.js"></script>
+	
+	
 
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
 
     <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/svgcheckbx.js"></script>
+
+	<!--jsPDF-->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script> -->
+
 
 </body>
 </html>
