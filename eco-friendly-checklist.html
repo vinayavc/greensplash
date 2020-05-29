@@ -88,16 +88,19 @@
 
 				<div class="col-lg-12">
 					<ul id="portfolio-flters">
-						<li data-filter=".filter-home, .filter-personal, .filter-fhealth" class="filter-active">All</li>
-						<li data-filter=".filter-home">Home</li>
-						<li data-filter=".filter-personal">Personal</li>
-						<li data-filter=".filter-fhealth">Feminine Health</li>
+						<li data-filter=".filter-kitchen, .filter-bathroom, .filter-personal, .filter-nursery, .filter-bedroom, .filter-laundry" class="filter-active">All</li>
+						<li data-filter=".filter-kitchen">Kitchen</li>
+						<li data-filter=".filter-bathroom">Bathroom</li>
+						<li data-filter=".filter-personal">Personal Hygiene</li>
+						<li data-filter=".filter-nursery">Baby Nursery</li>
+						<li data-filter=".filter-bedroom">Bedroom</li>
+						<li data-filter=".filter-laundry">Laundry</li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="row" id="portfolio-wrapper">
-				<div class="col-lg-4 col-md-6 portfolio-item filter-home">
+				<div class="col-lg-4 col-md-6 portfolio-item filter-kitchen">
 					<div class="container">						
 						<img src="img/leaf2-bg.jpg">
 						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#homeList">
@@ -108,49 +111,93 @@
 								<h4>Taco 'bout cleaning!</h4>
 								<span>Download the kitchen-checklist!</span>
 							</a>
-							<!-- <h4>Taco 'bout cleaning!</h4>
-							<span>Switch out your cleaning tools</span> -->
-						</div>
-												
+						</div>						
+					</div>
+				</div>
+
+
+				<div class="col-lg-4 col-md-6 portfolio-item filter-bathroom">
+					<div class="container">						
+						<img src="img/leaf2-bg.jpg">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#homeList">
+							Bathroom
+						</button>
+						<div class="details">
+							<a href="img/kitchen-checklist.pdf" download="kitchen-checklist.pdf">
+								<h4>Taco 'bout cleaning!</h4>
+								<span>Download the bathroom-checklist!</span>
+							</a>
+						</div>						
 					</div>
 				</div>
 
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-personal">
-					<a href="https://sustainablelivingtips.home.blog/2019/11/07/enamel-cruelty-2/" target="_blank">
-						<img src="img/portfolio/molar-bear.png" alt="Eco Friendly Oral Care">
+					<div class="container">						
+						<img src="img/leaf2-bg.jpg">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#homeList">
+							Personal Hygiene
+						</button>
 						<div class="details">
-							<h4>Brush Smart!</h4>
-							<span>Fight against Enamel cruelty</span>
-						</div>
-					</a>
+							<a href="img/kitchen-checklist.pdf" download="kitchen-checklist.pdf">
+								<h4>Treat yo self!</h4>
+								<span>Download the personal items checklist!</span>
+							</a>
+						</div>						
+					</div>
 				</div>
 
 
-				<div class="col-lg-4 col-md-6 portfolio-item filter-fhealth">
-					<a href="https://www.healthline.com/health/womens-health/menstrual-cup" target="_blank">
-						<img src="img/portfolio/menstrual-cup.jpg" alt="">
+				<div class="col-lg-4 col-md-6 portfolio-item filter-nursery">
+					<div class="container">						
+						<img src="img/leaf2-bg.jpg">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#homeList">
+							Baby Nursery
+						</button>
 						<div class="details">
-							<h4>Menstrual Cups</h4>
-							<span>Why you should make the switch</span>
-						</div>
-					</a>
+							<a href="img/kitchen-checklist.pdf" download="kitchen-checklist.pdf">
+								<h4>We love green babies!</h4>
+								<span>Download the nursery checklist!</span>
+							</a>
+						</div>						
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 portfolio-item filter-bedroom">
+					<div class="container">						
+						<img src="img/leaf2-bg.jpg">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#homeList">
+							Bedroom
+						</button>
+						<div class="details">
+							<a href="img/kitchen-checklist.pdf" download="kitchen-checklist.pdf">
+								<h4>Taco 'bout cleaning!</h4>
+								<span>Download the kitchen-checklist!</span>
+							</a>
+						</div>						
+					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 portfolio-item filter-fhealth">
-					<a href="https://www.greenmatters.com/style/2018/07/17/14GTJB/sustainable-period-products" target="_blank">
-						<img src="img/portfolio/reusable-pads.jpg" alt="">
+				<div class="col-lg-4 col-md-6 portfolio-item filter-laundry">
+					<div class="container">						
+						<img src="img/leaf2-bg.jpg">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#homeList">
+							Laundry
+						</button>
 						<div class="details">
-							<h4>Sustainable periods</h4>
-							<span>Good for you, good for the planet!</span>
-						</div>
-					</a>
-				</div> 			
+							<a href="img/kitchen-checklist.pdf" download="kitchen-checklist.pdf">
+								<h4>Taco 'bout cleaning!</h4>
+								<span>Download the kitchen-checklist!</span>
+							</a>
+						</div>						
+					</div>
+				</div>
 
 			</div>
 
 		</div>
-	</section><!-- #posts -->
+	</section>
+	<!-- #posts -->
 
 
 	<!--==========================
@@ -189,25 +236,6 @@
 							<button id="dwnld" type="button" class="btn btn-outline-info" >Download PDF</button>
 						</a>
 					</div>
-					<!-- <script type="text/javascript">
-						$(function () {
-
-							var specialElementHandlers = {
-								'#editor': function (element,renderer) {
-									return true;
-								}
-							};
-							$('#dwnld').click(function () {
-								var doc = new jsPDF();
-								doc.fromHTML(
-									$('#homeList').html(), 15, 15, 
-									{ 'width': 170, 'elementHandlers': specialElementHandlers }, 
-									function(){ doc.save('home-list.pdf'); }
-								);
-
-							});  
-						});
-					</script> -->
 				</div>
 			</div>
 		</div>
